@@ -35,11 +35,18 @@ atualizarRelogio();
 
 /* 4. Validador de Senha
  Função validar senha*/
-function validarSenha() {
+ function validarSenha() {
   const senha1 = document.getElementById('senha1').value;
   const senha2 = document.getElementById('senha2').value;
-  const mensagem = senha1 === senha2 ? "As senhas coincidem!" : "As senhas não coincidem.";
-  document.getElementById('mensagem').textContent = mensagem;
+  const mensagemElemento = document.getElementById('mensagem');
+
+  if (!senha1 || !senha2) {
+    mensagemElemento.textContent = "Os campos de senha não podem estar vazios.";
+  } else if (senha1 !== senha2) {
+    mensagemElemento.textContent = "As senhas não coincidem.";
+  } else {
+    mensagemElemento.textContent = "As senhas coincidem!";
+  }
 }
 
 /* 5. Jogo de Adivinhação 
