@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Exercícios JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+  <h1>1. Calculadora de IMC</h1>
+  <label>Peso (kg): <input type="number" id="peso"></label>
+  <label>Altura (m): <input type="number" step="0.01" id="altura"></label>
+  <button onclick="calcularIMC()">Calcular IMC</button>
+  <p id="resultado"></p>
+</section>
+
+<section>
+  <h1>2. Contador de Cliques</h1>
+  <button onclick="contarCliques()">Clique aqui</button>
+  <p id="contador">0</p>
+</section>
+
+<section>
+  <h1>3. Relógio Digital</h1>
+  <p id="relogio"></p>
+</section>
+
+<section>
+  <h1>4. Validador de Senha</h1>
+  <label>Senha: <input type="password" id="senha1"></label>
+  <label>Confirmar senha: <input type="password" id="senha2"></label>
+  <button onclick="validarSenha()">Enviar</button>
+  <p id="mensagem"></p>
+</section>
+
+<section>
+  <h1>5. Jogo de Adivinhação</h1>
+  <p>Adivinhe o número entre 1 e 10</p>
+  <input type="number" id="palpite">
+  <button onclick="verificarPalpite()">Tentar</button>
+  <p id="feedback"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
