@@ -1,4 +1,3 @@
-
 /* 1. Calculadora de IMC
 Função para calcular IMC*/
 function calcularIMC() {
